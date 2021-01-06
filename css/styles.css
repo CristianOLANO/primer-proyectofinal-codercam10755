@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/AbrilFatface-Regular.ttf) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+/*Elimino margenes y paddings que agrega el navegador por defecto*/
+* {
+  padding: 0;
+  margin: 0;
+} 
+/*Agrego margenes inferiores a los p*/
+p {
+  margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: cornsilk;
+}
+body{
+    color: rgb(87, 80, 88) ;
+    font-family: 'Abril Fatface', cursiva;
+    background-color:#BCE6EB ;
+}
+h1 {
+    display: block;
+    text-align: center;
+    color: rgb(87, 80, 88);
+    font-size: 58px;
+    padding-top: 35px; 
+    transition-duration: 4s;
+    transform-style: flat;
+
+}
+header{
+    display: flex;
+    background-color: #BCE6EB;
+}
+header i{
+    flex-shrink: initial;
+    height: auto;
+}
+/*estilos del checkbox*/
+header>div{
+    padding-left: 200px;
+    display: inline-block;
+    flex-flow: row;
+    align-self: center;
+    color: rebeccapurple;
+    font-size: xx-large;
+}
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#grilla {
+    display: grid;
+    grid-template-columns: 25% auto auto 14%;
+    grid-template-rows: 200px auto 200px auto auto 200px;
+    grid-template-areas: "header header header header"
+                         "nav nav nav nav"
+                         "tabla foto foto aside"
+                         "hipervinculo articulo1y2 articulo1y2 aside"
+                         "mision mision mision mision"
+                         "footer footer footer footer";
+}
+body section nav h3{
+    display: inline;
+    font-size: 200%;
+    text-align: inherit;
+    font-family: system-ui;
+    display: none;
+} 
+body section nav ul li{
+    align-items: flex-end;
+    align-content: center;
+    list-style: none;
+}
+body section nav ul li a{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+header{
+    grid-area: header;
+    border: 3px solid #BCE6EB;
+}
+body section > nav{
+    grid-area: nav;
+    background-color:rgb(87, 80, 88);
+    color: #BCE6EB;
+}
+section nav h3{
+    text-transform: capitalize;
+}
+section nav ul{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-grow: inherit;
+    float: right;
+    color: #FBBEDF ;
+    font-size: small;
+}
+section nav ul li{
+    display: flex;
+    justify-items: flex-start;
+}
+.palDoble{
+    display: flex;
+    text-align: center;
+}
+div.tabla{
+    grid-area: tabla;
+    border: 3px dashed #BCE6EB;
+    background-color: #BCE6EB;
+}
+div.tabla{
+    display: flex;
+    justify-content: center;
+    justify-self: normal;
+    padding: 17px;
+}
+div.foto{
+    grid-area: foto;
+    display: flex;
+    border: solid #BCE6EB;
+    background-color: #BCE6EB;
+    align-items: center;
+    justify-content: space-around;
+    page-break-after: auto;
+}
+aside{
+    grid-area: aside;
+    border: 3px black;
+    background-color: #BCE6EB;
+}
+div.hipervinculo{
+    grid-area: hipervinculo;
+    font: bold black underlined;
+}
+.hipervinculo{
+    display: flex;
+    background-color: #BCE6EB image=url(imagenes/109573134_177247523795182_4681955915168065058_o.jpg);
+    flex-grow: inherit;
+    align-content: center;
+    text-align: center;
+}
+#propuestas
+{
+    font-size: medium;
+}
+div.articulo1y2{
+    grid-area: articulo1y2;
+    border: 2px solid pink;
+    background-color: #FDCFDF;
+}
+div.mision{
+    grid-area: mision;
+    background-color: #BCE6EB;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    height: max-content;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: lightslategray;
+    padding: 40px 25%;
+    justify-content: center;
+}
+footer div.redes{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #BCE6EB;
+}
+a {
+    border: dashed 1px black;
+    border: thick;
+    border-width: 3px;
+    padding: 6px;
+    width: auto;
+    margin: 6px;
+    font-family:  'Padauk', sans-serif;
+    text-decoration: none;
+    font-size: x-large;
+    font-size: 20px bold; 
+   color: white;
+}
+.cuerpo {
+    display: inline-block;
+    display: flex;
+    flex-shrink: inherit;
+    align-items: center;
+    display: inline-flex;
+}
+/*.comun {
+    display:inline-block;
+    background-color: #FDCFDF;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    justify-content: center;
+    font-size: medium;
+}*/
+.articulo1y2{
+    display: flex;
+    justify-content: center;
+}
+.mision{
+    display: flex;
+    justify-content: left;
+}
+section div a{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+footer div.redes a i{
+   font-size: 60px;
+   letter-spacing: 150%;
+    color: #FBBEDF;
+}
+footer div.redes a i:hover{
+    color: cornsilk;
+}
+.icon-facebook-official:before {
+    content: "\f230";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1070px) {
+
+    #grilla{
+      background-color: grey;
+      grid-column-gap: 50px;
+
+      grid-row-gap: 50px;
+
+      grid-template-columns: repeat(3,2fr);
+      grid-template-rows: 60px 50px 60px 40px 60px 40px;
+      grid-template-areas: 
+                         "header header header"
+                         "nav nav nav"
+                         "tabla foto aside"
+                         "hipervinculo articulo1y2 aside"
+                         "mision mision mision"
+                         "footer footer footer";
+    }
+}
+
+/*  
+COLORES A USAR: 
+
+    #BCE6EB
+
+    #FDCFDF
+
+    #FBBEDF    
+    
+    */
+    /* latin-ext */
