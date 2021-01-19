@@ -1,0 +1,33 @@
+Este es un breve resumen de los datos de tu sitio web. Para obtener más información sobre cada función busca los íconos dentro del panel de control. ¿No sabes por dónde empezar? Mira los
+tutoriales
+en el foro de la comunidad.
+Detalles del sitio web
+Activo desde	2021-01-09 23:38:55
+Acceder a tu sitio web
+Mis dominios	
+iuvare.000webhostapp.com
+Estadísticas	Ancho de banda: 0MB de 3000MB
+Disco: 0MB de 300MB
+Inodes: 4 de 10000
+Emails enviados: 0 of 50
+
+Detalles de subidas de archivos (FTP)
+To learn how to manage website files follow"How to upload files to 000webhost?" tutorial.
+Host	files.000webhost.com
+Nombre de usuario	iuvare
+Contraseña	Cambiar contraseña
+Directorio de inicio	/storage/ssd4/438/15879438
+Carpeta para cargar archivos	public_html
+Clientes FTP	Administrador de archivos web
+SmartFTP
+FileZilla
+
+Nombres de servidores
+ns01.000webhost.com
+ns02.000webhost.com
+Enlaces rápidos
+Cambiar la contraseña del sitio web
+Subir archivos con el gestor de archivos web
+Administrar bases de datos con phpMyAdmin
+Obtené ayuda en los foros de la comunidad
+Tutoriales comunitarios

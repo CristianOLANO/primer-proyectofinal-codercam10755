@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="./icono/logoredondo.png">
@@ -12,148 +11,74 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-
-	<link rel="stylesheet" href="css/icons.css">
-	<!--BOOTSTRAP-->
-	<link rel="styleshhet" type="text/css" href="./css/bootstrap.min.css">
-	<!--ESTILOS MIOS VIEJO-->
-	<link rel="stylesheet" href="css/styles.css">
-	<!--ANIMACIONES "ANIMATE"-->
-	<link rel="stylesheet" href="./css/animate.min.css">
+	<link rel="stylesheet" href="css/icons.css"><!--ICONOS-->
+	<link rel="styleshhet" type="text/css" href="./css/bootstrap.min.css"><!--BOOTSTRAP-->
+	<link rel="stylesheet" href="css/main.css"><!--ESTILOS SASS-->
+	<link rel="stylesheet" href="./css/animate.min.css"><!--ANIMACIONES "ANIMATE"-->
 </head>
-<!-- MINUTO 36.00 DE LA CLASE 10.2 SE PUEDE VER ALGUNAS DE LAS PREGUNTAS DE LOS ALUMNOS QUE DESTACO-->
 <body>
+	<header>
+		<i><img src="./icono/logo100.jpg" alt="Fundacion IUVARE Arg"></i>
+		<h1>IUVARE Argentina</h1>
+	</header>
+	<nav class="nav">
+		<h3>mapa del sitio</h3>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li class="palDoble"><a href="pages/socialmenteResponsables.html">Quienes somos</a></li>
+			<li><a href="pages/secundarios.html">Secundarios</a></li>
+			<li class="palDoble"><a href="pages/voluntariado.html">Voluntariado Universitario</a></li>
+			<li class="palDoble"><a href="pages/proyectos.html">Proyectos Barriales</a></li>
+			<li><a href="pages/alimentacion.html">Alimentacion Saludable</a></li>
+			<li><a href="pages/galeria.html">Imagenes</a></li>
+			<li><a href="pages/contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+<!--NAVBAR de bootstrap-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="#">Navbar</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
 	
-	<!--GRILLA PPAL	   -->
-	<section id="grilla">
-		<!-- ELEMENTO 1-->
-		<header>
-			<i><img src="./icono/logo100.jpg" alt="Fundacion IUVARE Arg"></i>
-			<h1>IUVARE Argentina</h1>
-		</header>
-		<nav class="nav">
-			<h3>mapa del sitio</h3>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li class="palDoble"><a href="pages/quienessomos.html">Quienes somos</a></li>
-				<li><a href="pages/secundarios.html">Secundarios</a></li>
-				<li class="palDoble"><a href="pages/voluntariado.html">Voluntariado Universitario</a></li>
-				<li class="palDoble"><a href="pages/proyectos.html">Proyectos Barriales</a></li>
-				<li><a href="pages/multimedia.html">Multimedia</a></li>
-				<li><a href="pages/contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-		<!--ELEMENTO 2-->
-		<div class="hipervinculo">
-			<a href="#victor">Nuestros Objetivos</a>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		<li class="nav-item active">
+			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Link</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link disabled" href="#">Disabled</a>
+		</li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+		<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	</div>
+	</nav>
+<!--NAV responsive-->
+	<nav class="navbar navbar-dark bg-dark">
+		<!-- Navbar content -->
+	</nav>
+	<nav class="navbar navbar-dark bg-primary">
+	<!-- Navbar content -->
+	</nav>
+	
+
+
+
+	<footer><!--FOOTER-->
+		<p>Seguinos en nuestras redes</p>
+		<div class="redes">
+			<a href="https://instagram.com/iuvareargentina" target="blank"><i class="icon-instagram"></i></a>
+			<a href="https://facebook.com/iuvareargentina" target="blank"><i class="icon-facebook-official"></i></a>
+			<a href="https://tweeter.com/iuvareargentina" target="blank"><i class="icon-twitter"></i></a>
 		</div>
-		<!--ELEMENTO 3-->
-		<div class="tabla">
-			<table>
-				<tr>
-					<td><b>nombre</b></td>
-					<td><b>apellido</b></td>
-					<td><b>canal</b></td>
-					<td><b>seguidores</b></td>
-				</tr>
-				<tr>
-					<td>Carlos</td>
-					<td>PEREZ</td>
-					<td>Iuvarearg</td>
-					<td>8000</td>
-				</tr>
-				<tr>
-					<td>Cristian</td>
-					<td>OLANO</td>
-					<td>cristianfederic</td>
-					<td>8</td>
-				</tr>
-				<tr>
-					<td>juan</td>
-					<td>LOPEZ</td>
-					<td>pizerias</td>
-					<td>8500</td>
-				</tr>
-
-			</table>
-			<div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="customCheck1">
-				<label class="custom-control-label" for="customCheck1">¿¿¿¿Te gusta esta pagina miamor???</label>
-			</div>
-		</div>
-		<!--ELEMENTO 4-->
-		<div class="foto">
-			<div class="col-md-4-col-sm-6">
-				<img src="imagenes/EV_u6PVX0AUN3Hi.jpg" alt="iuvareargentina2" title="tapiz de iuvare" width="200px">
-				<img src="imagenes/94703522_152349789618289_6883555660236062720_n (2).jpg" alt="iuvareargentina1"
-					title="nuevacampaña" widt="200px">
-				<img src="imagenes/119071021_190494399137161_3111792093346690945_n (2).jpg" alt="iuvareargentina3"
-					title="pizarron" widt="200px">
-			</div>
-		</div>
-		<!--ELEMENTO 5-->
-		<div class="articulo1y2">
-			<!--primer articulo-->
-			<article class="animate__animated animate__backInUp">
-				<hgroup>
-					<h1>La Fundacion</h1>
-					<h2>Como comnzo todo</h2>
-				</hgroup>
-
-				<time datetime="04-11-2020">Pagina web desarrollada el 4 del 11 de 2020</time>
-
-				<p>Lorem ipsum dolor sit ameum officiis debitis deleniti unde facilis
-					error optio commodi.</p>
-
-			</article>
-			<!--segundo articulo-->
-			<article>
-				<h1 id="propuestas">Nuestras propuestas y actividades</h1>
-				<h2>A moverse</h2>
-				<p>Lorem ipsum dolor sit earum
-					dolore blanditiis, veniam fuga voluptate illo officia ea! Ad doloribus qui assumenda dolorem, vero
-					distinctio.</p>
-			</article>
-
-		</div>
-		<!--ELEMENTO 6
-				barra lateral a la derecha-->
-
-		<aside>
-			<h3>frase del dia</h3>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et itaque labore magnam nihil odio, quasi ex
-				expedita ipsa ducimus repellendus doloribus sed, corporis odit fugiat, corrupti obcaecati assumenda vel
-				qui voluptatibus? Quaerat ut blanditiis non, magni obcaecati iste dolorem porro, rerum nemo quidem
-				voluptas nesciunt eligendi tempore. Sunt, mollitia pariatur! Lorem ipsum dolor sit amet consectetur
-				adipisicing elit. Soluta, odio saepe? Tenetur, error! Pariatur, voluptate? Mollitia, aliquid? Eius
-				accusantium vitae earum, cupiditate qui quisquam numquam beatae, odit quia, fugiat animi?</p>
-		</aside>
-		<!--ELEMENTO 7-->
-		<div class="mision">
-			<main>
-				<h1 class="animate__animated animate__tada">Mision Objetivo</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores autem temporibus
-					reprehenderit perferendis? Sit laudantium quisquam voluptate! Mollitia, ducimus magnam quaerat
-					facilis quidem eveniet obcaecati quas ut doloribus ratione possimus repellat veritatis architecto
-					iste temporibus asperiores sunt dolor reiciendis fuga illo. Excepturi labore magni quidem quae aut,
-					incidunt tempora necessitatibus ut commodi fugiat esse quaerat, unde veniam ratione laboriosam illo
-					eum. Vitae ipsum provident dolores doloribus voluptatum et aliquid nihil consequuntur? Rem quibusdam
-					veniam dolore quidem repellendus odit quo reprehenderit! Illum in inventore aliquam, unde deserunt,
-					soluta hic, modi tenetur libero quod ut similique. Nostrum, rerum. Id, voluptatibus quia!</p>
-			</main>
-		</div>
-		<!--FOOTER-->
-		<footer>
-			<p>Seguinos en nuestras redes</p>
-			<div class="redes">
-				<a href="https://instagram.com/iuvareargentina" target="blank"><i class="icon-instagram"></i></a>
-				<a href="https://facebook.com/iuvareargentina" target="blank"><i class="icon-facebook-official"></i></a>
-				<a href="https://tweeter.com/iuvareargentina" target="blank"><i class="icon-twitter"></i></a>
-			</div>
-			<p>
-				copyright 2020 - todos los derechos reservados
-			</p>
-		</footer>
+		<p>copyright 2020 - todos los derechos reservados</p>
+	</footer>
 	</section>
 	<!--<script src="../js/wow.js"></script>-->
 	<!--<script>
